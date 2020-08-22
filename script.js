@@ -69,3 +69,4 @@ if (edad >= 18){
 }else{
     console.log('Lo sentimos... No se acepta el ingreso a menores de edad');
 }
+

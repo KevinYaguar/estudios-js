@@ -63,6 +63,8 @@ if(radio < 89.9){
 -------------------------------------------------------------
 */
 
+//BANCO
+
 var dinero = prompt('ingrese la cantidad de dinero que quiere transferir');
 var destinatario = prompt('Ingrese destinatario');
 var dineroDisponible = 100000;

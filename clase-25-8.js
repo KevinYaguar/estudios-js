@@ -61,7 +61,7 @@ alert('El promedio de los numeros de un digito ingresados es de ' + (numerosMeno
 */
 
 //Ejercicio PARES E IMPARES
-/*
+
 var pares = 0;
 var impares =  0;
 
@@ -82,10 +82,10 @@ if(pares>impares){
 } else {
     alert('Los impares tienen más ingresos que los pares');
 }
-*/
+
 
 //Ejercicio DE NUMEROS A LETRAS
-
+/*
 var numeroIngresado = parseInt(prompt('Ingrese un número del 1 al 10'));
 
 switch (numeroIngresado) {
@@ -98,6 +98,7 @@ switch (numeroIngresado) {
     case 3:
     alert('c');
     break;
+    
     case 4:
     alert('d');
     break;
@@ -122,3 +123,4 @@ switch (numeroIngresado) {
     default:
         alert('El numero ingresado no es valido')
 }
+*/

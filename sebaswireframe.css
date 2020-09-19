@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Maven Pro', sans-serif;
+}
+body{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.contenedor-principal {
+    
+    width: 900px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#logo {
+    width: 20%;
+}
+
+.header-wf,
+.nav-wf,
+.main-wf,
+.ul-wf,
+.main-div-wf {
+    display: flex;
+    align-items: center;
+    
+}
+
+.header-wf,
+.main-wf,
+#sec {
+    border: 2px solid black;
+    margin: 30px 15px 30px 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.nav-wf{
+    width: 500px;
+    background: #8b8b8b; /* Old browsers */
+    margin-right: 25px;   
+    border-radius: 4px;
+    border-bottom: 1px solid #555555;
+    background: linear-gradient(to bottom,  #8b8b8b 0%,#6a6a6a 50%,#5e5e5e 52%,#717171 100%); /* W3C */
+}
+.ul-wf{
+    width: 100%;
+    transition: all .5s ease;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+.header-wf{
+    justify-content: space-between;
+}
+
+.li-wf{
+    width: 100%;
+    padding: 10px;
+    border-right: 1px solid #5c5c5c;
+	border-left: 1px solid rgba(255,255,255,.2);
+}
+.li-wf:hover{
+    background: rgba(0,0,0,.3);
+	border-right: 1px solid transparent;
+	border-left: 1px solid transparent;
+	border-bottom: none;
+}
+.a-wf{
+    color: #fff;
+	padding: 10px 0;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 1px 1px 0px rgba(0,0,0,.3);
+}
+
+#imgmain {
+    width: 350px;
+    height: 200px;
+    border-radius: 25px;
+}
+.main-div-wf{
+    flex-flow: column wrap;
+}
+.main-p-wf{
+    padding: 10px;
+}
+#sec {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(auto, 2);
+    grid-template-rows: repeat(auto, 3);
+    grid-template-areas: "addimg addimg""fig1 fig2"
+        "vermas vermas";
+    grid-gap: 10px;
+
+}
+
+#addimg {
+    grid-area: addimg;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    color: blue;
+    border: 2px solid blue;
+
+}
+
+#sec>#sec-fig {
+    grid-area: fig1;
+}
+
+#sec>#sec-fig2 {
+    grid-area: fig2;
+}
+
+#sec>#btn-vermas {
+    grid-area: vermas;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    margin-top: 10px;
+    background: black;
+    color: white;
+    padding: 5px;
+}
+
+#imgFig,
+#imgFig2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+#btn-vermas {
+
+    background: #000000;
+    background-image: linear-gradient(to bottom, #000000, #6E6E6E);
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 10px;
+    box-shadow: 1px 1px 20px 0px #000000;
+    text-shadow: 1px 1px 20px #000000;
+    border: solid #337FED 1px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+#btn-vermas:hover {
+    border: solid #337FED 1px;
+    background: #1E62D0;
+    background-image: linear-gradient(to bottom, #1E62D0, #3D94F6);
+    border-radius: 20px;
+    text-decoration: none;
+}

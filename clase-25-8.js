@@ -16,7 +16,8 @@ var suma = 0;
 var cantidadMax = 5;
 
 for (var i = 1; i <= cantidadMax; i++){
-    var numeroIngresado = prompt('Igrese numero')
+    var numeroIngresado = prompt('Igrese  
+    numero')
     suma = suma + parseInt(numeroIngresado);
 }
  alert('los numeros ingresados suman ' + suma)

@@ -1,0 +1,131 @@
+%borde {
+    border: 1px solid black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body {
+    @extend %borde;
+    padding: 10px;
+    min-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    @media (min-width: 495px) {
+        width: 100%;
+        max-width: 495px;
+        
+    }
+}
+
+header {
+    @extend %borde;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    #logo-box{
+        img{
+            border-radius: 10px;
+        }
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+
+        li {
+            padding: 2px;
+        }
+
+        .Item2,
+        .Item3,
+        .Item4 {
+            border-left: 1px solid black;
+        }
+
+
+    }
+
+}
+main{
+    
+    section{
+        margin-top: 10px;
+        @extend %borde;
+    }
+    .one{
+        display: grid;
+        grid-template:  1fr 1fr / 1fr 1fr;
+        padding: 10px;
+        .heading{
+            grid-area: 1 / 1 / span 1 / span 1;
+            align-self: center;
+            span{
+                font-weight: bolder;
+            }
+        }
+        .text{
+            grid-area: 2 / 1 / span 1 / span 1;
+        }
+        .imagen{          
+            grid-area: 1 / 2 / span 2 / span 2;
+            border-radius: 20px;
+           
+            img{
+                border-radius: 20px;
+                width: 200px;
+                height: 100px;
+            }
+        }
+    }
+    #two{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        margin-bottom: 20px;
+        img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: auto;
+            
+        }
+        #img-one{
+            order: 1;
+        }
+        #img-two{
+            order: 2;
+        }
+        span{
+            margin: auto;
+            line-height: 60px;
+            
+        }
+        #span-one{
+            order: 3;
+        }
+        #span-two{
+            order: 4;
+        }
+        button{
+            @extend %borde;
+            margin: auto;
+            line-height: 40px;
+            width: 80%;
+            
+        }
+        #button{
+            order: 5;
+        }
+    }
+}
+.logo-border-red{
+    border: 2px solid red;
+    border-radius: 10px;
+    
+}

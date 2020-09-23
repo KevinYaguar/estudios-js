@@ -34,10 +34,7 @@ function cambioDos(){
 
 }
 
-function ruido (){
-    alert('guau');
-    
-}
+cambioImg();
 
 
 function order(){

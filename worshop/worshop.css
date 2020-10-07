@@ -1,0 +1,23 @@
+h1{
+    display: flex;
+    justify-content: center;
+    color: #FEFB1E;
+ }
+ 
+ div{
+   display: flex;
+ }
+ 
+ body{
+   background-color: #16a085;
+ }
+ 
+ #fraseSimpsons{
+   color: #FEFB1E;
+   position: relative;
+   padding-top: 1%;
+ }
+ 
+ #nombreFrase{
+   color: #FEFB1E;
+ }
